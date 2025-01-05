@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlixBox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #a8e6ff, #baffc9);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+      color: black;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .welcome {
+      color: black;
+      font-size: 1.8rem; /* Slightly larger */
+      font-weight: 700; /* Thicker font */
+      letter-spacing: 2px; /* Adds spacing between letters */
+      margin-bottom: 0.5rem;
+      text-transform: uppercase; /* Makes it all caps for a bold look */
+    }
+
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .blix {
+      color: #4da6ff; /* Light blue */
+    }
+
+    .box {
+      color: #63d471; /* Light green */
+    }
+
+    .subtitle {
+      color: black;
+      font-size: 1.2rem; /* Slightly larger than before */
+      font-weight: 600; /* Thicker font */
+      margin-top: 1rem;
+      font-style: italic; /* Adds a stylish italic look */
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome">Welcome to...</div>
+  <div class="title">
+    <span class="blix">Blix</span><span class="box">Box</span>
+  </div>
+  <div class="subtitle">You may close this tab.</div>
+</body>
+</html>
